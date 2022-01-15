@@ -2591,6 +2591,7 @@ class Workflow(object):
 
             if not isatty:
                 self.send_feedback()
+                sys.exit(0)
 
         self.magic_arguments['help'] = do_help
         self.magic_arguments['magic'] = list_magic
